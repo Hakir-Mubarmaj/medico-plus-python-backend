@@ -1,0 +1,18 @@
+POST http://127.0.0.1:5000/upload
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="title"
+
+demo title
+--boundary
+Content-Disposition: form-data; name="answer_sequence"
+
+ABCDACBCAD
+--boundary
+Content-Disposition: form-data; name="pdf"; filename="Lecture 1.pdf"
+Content-Type: application/pdf
+
+< /Lecture 1.pdf
+--boundary--
+
