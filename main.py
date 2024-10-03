@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Configuring SQLite database
 basedir = os.path.abspath(os.path.dirname(__file__))
